@@ -8,7 +8,6 @@ export default class Movies extends Component {
     }
 
     handleChange = (e) => {
-     //   this.setState({isLoaded: false, error:false }) 
         let title = e.target.value;
         this.getMovies(`https://www.omdbapi.com/?apikey=45f0782a&s=${title === "" ? "war" : title}`)
     }
